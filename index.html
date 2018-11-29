@@ -1,15 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
     <title>Josh's Responsive Website</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins|Roboto" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    
+    <div class="page-wrapper" id="#top">
+
+        <nav class="main-nav">
+            <div class="site-name">Josh Lopez</div>
+            <ul>
+                <li><a href="#top">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <header>
+            <div class="flex-container max-container">
+            <picture>
+                <source
+                    media="(max-width: 768px)"
+                    sizes="(max-width: 1534px) 100vw, 1534px"
+                    srcset="
+                    images/josh_ist7h3_ar_4_3,c_fill,g_auto__c_scale,w_320.jpg 320w,
+                    images/josh_ist7h3_ar_4_3,c_fill,g_auto__c_scale,w_1055.jpg 1055w,
+                    images/josh_ist7h3_ar_4_3,c_fill,g_auto__c_scale,w_1534.jpg 1534w">
+                <img
+                    sizes="(max-width: 4830px) 40vw, 1932px"
+                    srcset="
+                    images/josh_ist7h3_c_scale,w_308.jpg 308w,
+                    images/josh_ist7h3_c_scale,w_1312.jpg 1312w,
+                    images/josh_ist7h3_c_scale,w_1932.jpg 1932w"
+                    src="images/josh_ist7h3_c_scale,w_1932.jpg"
+                    alt="Hi, I'm Josh!">
+            </picture>
+            <p class="callout">Hi! I'm a front-end developer who loves responsive design and css, I recently finished leaning front-end
+                web development at Treehouse and am excited to put all my skills to use!</p>
+            </div>
+        </header>
+
+        <section id="portfolio">
+            <h2 class="section-title">Portfolio</h2>
+            <div class="max-container">
+            <div class="flex-container">
+                <div class="flex-item">
+                    <img src="images/portfolio-1.png" alt="Marketing Page">
+                    <h3>Marketing Page</h3>
+                    <p>This project shows the front page marketing website meant for a specific business I'm interested
+                        in.</p>
+                </div>
+
+                <div class="flex-item">
+                    <img src="images/portfolio-2.png" alt="Search Page">
+                    <h3>Search Page</h3>
+                    <p>This project searches through a specific database to find information that the user i strying to
+                        look up.</p>
+                </div>
+
+                <div class="flex-item">
+                    <img src="images/portfolio-3.png" alt="Travel App">
+                    <h3>Travel App</h3>
+                    <p>This project compares travel times based on different transportation methods and tells you the
+                        best one.</p>
+                </div>
+
+                <div class="flex-item">
+                    <img src="images/portfolio-4.png" alt="Map of Favorite Spots">
+                    <h3>Map of Favorite Spots</h3>
+                    <p>This project uses mapping apis to plot points for my favorite spots in the city for a
+                        do-it-yourself walking tour.</p>
+                </div>
+
+                <div class="flex-item">
+                    <img src="images/portfolio-5.png" alt="Photo Gallery">
+                    <h3>Photo Gallery</h3>
+                    <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate
+                        through photos.</p>
+                </div>
+
+                <div class="flex-item">
+                    <img src="images/portfolio-6.png" alt="Calculator">
+                    <h3>Calculator</h3>
+                    <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <footer id="contact">
+            <h2>Contact</h2>
+            <p>If you're interested in chatting or want more information about what I've been working on, I'd love to
+                hear from you!</p>
+            <p><b>Phone</b> +1 (111)555-1234</p>
+            <p><b>Email</b> email@yoursite.com</p>
+
+            <nav class="footer-nav">
+                    <div class="site-name">Josh Lopez</div>
+                    <ul>
+                        <li><a href="#top">Home</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#top">Back to Top</a></li>
+                    </ul>
+                </nav>
+
+        </footer>
+
+    </div>
 </body>
 </html>
